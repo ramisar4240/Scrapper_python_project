@@ -1,5 +1,6 @@
-import requests
+
 from bs4 import BeautifulSoup
+import requests
 import json
 
 url = "https://books.toscrape.com/"
@@ -30,7 +31,7 @@ def scrape_book(url):
 
     # Save the JSON data to a file
     with open("books.json", "w", encoding="utf-8") as f:
-        json.dump(book_data, f, ensure_ascii=False, indent=2)
+        json.dump(book_data, f, ensure_ascii=False, indent=4)
 
     print("Book data has been saved to 'books.json'.")
 
