@@ -33,6 +33,6 @@ def scrape_book(url):
     with open("books.json", "w", encoding="utf-8") as f:
         json.dump(book_data, f, ensure_ascii=False, indent=4)
 
-    print("Book data has been saved to 'books.json'.")
+    print("Book's data has been saved to 'books.json'.")
 
 scrape_book(url)
